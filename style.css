@@ -146,7 +146,7 @@ body {
   height: 12px;
   padding: 0px 8px;
   font-size: 12px;
-  width: 360px;
+  width: min(360px, 90vw);
   transition: border-color 0.2s;
 }
 
