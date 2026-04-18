@@ -28,7 +28,6 @@
     </div>
 
     <nav>
-
       <div class="search-container">
         <i class="fas fa-search" id="search-icon"></i>
         <input type="search" id="searchInput" placeholder="Buscar produtos...">
@@ -67,11 +66,30 @@
         </a>
       </div>
     </nav>
+
+    <!-- BOTÃO HAMBURGUER (mobile) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
+
+  <!-- OVERLAY MENU LATERAL -->
+  <div class="menu-overlay" id="menu-overlay"></div>
 
   <!-- Menu Lateral Mobile -->
   <nav id="menu-lateral" class="side-menu">
     <button class="fechar-menu" id="fechar-menu">&times;</button>
+
+    <!-- BUSCA NO MENU MOBILE -->
+    <div class="menu-search">
+      <div class="menu-search-container">
+        <i class="fas fa-search"></i>
+        <input type="search" id="searchInputMobile" placeholder="Buscar produtos...">
+      </div>
+    </div>
+
     <div class="menu-section">
       <h4>Navegação</h4>
       <a href="index.html"><i class="fas fa-home"></i>Início</a>
@@ -87,11 +105,6 @@
     </div>
   </nav>
 
-  <section class="">
-    <div class="">
-    </div>
-  </section>
-
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
@@ -101,9 +114,10 @@
       <a href="#produtos" class="btn-primary">Ver Coleção</a>
     </div>
     <div class="hero-visual">
-      <div class="hero-visual-bg"><img src="./Imagens/Conjunto Alfaiataria Colete com 4 Botões e Short com Bolso.png"
-          alt="Nova Coleção" class="hero-img"></div>
-
+      <div class="hero-visual-bg">
+        <img src="./Imagens/Conjunto Alfaiataria Colete com 4 Botões e Short com Bolso.png" alt="Nova Coleção"
+          class="hero-img">
+      </div>
       <div class="hero-badge">
         <span class="hero-badge-pct">New</span>
         <span class="hero-badge-text">Coleção</span>
@@ -297,6 +311,7 @@
     </div>
   </section>
 
+  <!-- CATEGORIAS -->
   <section>
     <div class="section-header fade-in">
       <p class="section-eyebrow">✦ Explore</p>
@@ -308,7 +323,7 @@
 
         <div class="cat-card">
           <div class="cat-bg cat-bg-1"></div>
-          <img src="Imagens/vestidocaidoombroso.jpg" alt="Produto" class="cat-img">
+          <img src="Imagens/vestidocaidoombroso.jpg" alt="Vestidos Elegantes" class="cat-img">
           <div class="cat-overlay"></div>
           <div class="cat-content">
             <p class="cat-label">Destaque</p>
@@ -319,7 +334,7 @@
 
         <div class="cat-card">
           <div class="cat-bg cat-bg-2"></div>
-          <img src="Imagens/BlazerBackCoffee.jpg" alt="Produto" class="cat-img">
+          <img src="Imagens/BlazerBackCoffee.jpg" alt="Blazers" class="cat-img">
           <div class="cat-overlay"></div>
           <div class="cat-content">
             <p class="cat-label">Temporada</p>
@@ -330,7 +345,7 @@
 
         <div class="cat-card">
           <div class="cat-bg cat-bg-3"></div>
-          <img src="Imagens/BolsaBrancaFashion.jpg" alt="Produto" class="cat-img">
+          <img src="Imagens/BolsaBrancaFashion.jpg" alt="Bolsas" class="cat-img">
           <div class="cat-overlay"></div>
           <div class="cat-content">
             <p class="cat-label">Tendência</p>
@@ -342,7 +357,7 @@
         <div class="cat-card">
           <div class="cat-bg cat-bg-4"></div>
           <img src="Imagens/Top BizChic Borgonha com Botões Metálicos Decorativos, Decote Halter e Fenda Lateral..jpg"
-            alt="Produto" class="cat-img">
+            alt="Malhas" class="cat-img">
           <div class="cat-overlay"></div>
           <div class="cat-content">
             <p class="cat-label">Casual</p>
@@ -353,7 +368,7 @@
 
         <div class="cat-card">
           <div class="cat-bg cat-bg-5"></div>
-          <img src="Imagens/MacaquinhoAlfaiataria.jpg" alt="Produto" class="cat-img">
+          <img src="Imagens/MacaquinhoAlfaiataria.jpg" alt="Macaquinho" class="cat-img">
           <div class="cat-overlay"></div>
           <div class="cat-content">
             <p class="cat-label">Novo</p>
@@ -366,17 +381,17 @@
     </div>
   </section>
 
-  <!-- BANNER CTA WHATSAPP -->
+  <!-- BANNER CTA WHATSAPP (comentado, mantido) -->
   <!--- <div class="banner-cta">
-    <div class="banner-cta-content">
-      <p class="banner-eyebrow">✦ Atendimento personalizado</p>
-      <h2 class="banner-title">Fale com a <em>Jacy</em></h2>
-      <p class="banner-sub">Tire dúvidas, peça indicações de looks ou finalize sua compra direto pelo WhatsApp.</p>
-      <a href="https://wa.me/5584997050106" target="_blank" class="btn-whatsapp">
-        <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
-      </a>
-    </div>
-  </div> --->
+<div class="banner-cta-content">
+<p class="banner-eyebrow">✦ Atendimento personalizado</p>
+<h2 class="banner-title">Fale com a <em>Jacy</em></h2>
+<p class="banner-sub">Tire dúvidas, peça indicações de looks ou finalize sua compra direto pelo WhatsApp.</p>
+<a href="https://wa.me/5584997050106" target="_blank" class="btn-whatsapp">
+<i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+</a>
+</div>
+</div> --->
 
   <!-- RODAPÉ -->
   <footer>
@@ -413,7 +428,45 @@
     </div>
   </footer>
 
-  <!-- SCRIPTS (intocados) -->
+  <!-- SCRIPTS -->
+  <script>
+    // ── Menu lateral mobile ──
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuLateral = document.getElementById('menu-lateral');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const fecharMenu = document.getElementById('fechar-menu');
+
+    function abrirMenu() {
+      menuLateral.classList.add('ativo');
+      menuOverlay.classList.add('ativo');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function fecharMenuFn() {
+      menuLateral.classList.remove('ativo');
+      menuOverlay.classList.remove('ativo');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle?.addEventListener('click', abrirMenu);
+    fecharMenu?.addEventListener('click', fecharMenuFn);
+    menuOverlay?.addEventListener('click', fecharMenuFn);
+
+    // Fecha menu ao clicar em link interno
+    menuLateral.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', fecharMenuFn);
+    });
+
+    // ── Sincroniza busca mobile com busca desktop ──
+    const searchDesktop = document.getElementById('searchInput');
+    const searchMobile = document.getElementById('searchInputMobile');
+
+    searchMobile?.addEventListener('input', () => {
+      searchDesktop.value = searchMobile.value;
+      searchDesktop.dispatchEvent(new Event('input'));
+    });
+  </script>
+
   <script src="script.js"></script>
   <script src="carrinho.js"></script>
 
