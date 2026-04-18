@@ -167,4 +167,15 @@ if (searchInput && noResults) {
 // Atualiza o contador no carregamento da página
 atualizarContador();
 
+const menuToggle = document.getElementById('menu-toggle');
+const menuOverlay = document.getElementById('menu-overlay');
 
+menuToggle?.addEventListener('click', () => {
+document.getElementById('menu-lateral').classList.toggle('ativo');
+menuOverlay.classList.toggle('ativo');
+});
+
+menuOverlay?.addEventListener('click', () => {
+document.getElementById('menu-lateral').classList.remove('ativo');
+menuOverlay.classList.remove('ativo');
+});
