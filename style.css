@@ -1116,31 +1116,57 @@ RESPONSIVIDADE
     display: none;
   }
 
-  /* Hero: empilha */
+  /* Hero: mantém lado a lado, ajusta padding e tamanhos */
   .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-  .hero-visual {
-    height: 320px;
-    order: -1;
-    /* imagem aparece antes do texto */
+    grid-template-columns: 1fr 1fr;
+    min-height: 52vw;
   }
 
   .hero-content {
-    padding: 40px 24px 40px;
+    padding: 28px 16px 28px 20px;
+  }
+
+  .hero-eyebrow {
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .hero-title {
+    font-size: clamp(26px, 5.5vw, 44px);
+    margin-bottom: 10px;
   }
 
   .hero-sub {
+    font-size: 12px;
+    line-height: 1.6;
     max-width: 100%;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
   }
 
   .hero-badge {
-    bottom: 20px;
-    right: 20px;
-    width: 76px;
-    height: 76px;
+    bottom: 12px;
+    right: 12px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero-badge-pct {
+    font-size: 16px;
+  }
+
+  .hero-badge-text {
+    font-size: 7px;
   }
 
   /* Section header */
@@ -1214,21 +1240,36 @@ RESPONSIVIDADE
     gap: 14px;
   }
 
-  /* Hero */
-  .hero-visual {
-    height: 260px;
+  /* Hero: mantém lado a lado em telas pequenas */
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    min-height: 56vw;
   }
 
   .hero-content {
-    padding: 32px 20px 36px;
+    padding: 20px 12px 20px 16px;
+  }
+
+  .hero-eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
   }
 
   .hero-title {
-    font-size: clamp(36px, 10vw, 52px);
+    font-size: clamp(20px, 5vw, 32px);
+    margin-bottom: 8px;
   }
 
   .hero-sub {
-    font-size: 14px;
+    font-size: 11px;
+    margin-bottom: 14px;
+  }
+
+  .btn-primary {
+    padding: 8px 14px;
+    font-size: 9px;
+    letter-spacing: 1px;
   }
 
   .hero-badge {
